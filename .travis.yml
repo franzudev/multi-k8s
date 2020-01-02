@@ -20,3 +20,4 @@ after_succes:
   - docker push franzu/multi-nginx
   - docker push franzu/multi-server
   - docker push franzu/multi-worker
+  
