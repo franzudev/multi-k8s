@@ -20,16 +20,4 @@ after_succes:
   - docker push franzu/multi-nginx
   - docker push franzu/multi-server
   - docker push franzu/multi-worker
-
-deploy:
-  provider: elasticbeanstalk
-  region: eu-west-2
-  app: multi-docker
-  env: MuldiDocker-env
-  bucket_name: elasticbeanstalk-eu-west-2-795225714612
-  bucket_path: docker-multi
-  on:
-    branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
+  
